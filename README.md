@@ -4,4 +4,4 @@ A simple light syntax theme to mimic the Geany editor. Works with light themes. 
 
 I only looked at sample PHP, HTML, CSS files to check colors, but more could be done I'm sure.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![A screenshot of your theme](http://i.imgur.com/7KGns27.png)
