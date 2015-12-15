@@ -1,5 +1,6 @@
 @import "syntax-variables";
 
+// Animated Brace Matching
 @-webkit-keyframes bracketanimation {
   from  {
       border-width: 1px;
@@ -42,7 +43,7 @@ atom-text-editor, :host {
 
     // remove this if you don't want the active line highlighted
     // setting the default line messes with the animated bracket-matcher
-    // matcher so will just remove that feature for now.
+    // matcher so will just remove this for now as the bracket matcher is nicer.
 
     /*.lines .line.cursor-line {
       background-color: @very-light-gray;
@@ -108,6 +109,11 @@ atom-text-editor .search-results .marker .region,
 atom-text-editor .search-results .marker.current-result .region,
 :host .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
+}
+
+atom-text-editor::shadow .wrap-guide {
+  width: 1px;
+  background-color: #C2EBC2;
 }
 
 .comment {

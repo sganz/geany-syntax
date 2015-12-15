@@ -2,10 +2,11 @@
   "name": "geany-syntax",
   "theme": "syntax",
   "version": "0.0.1",
-  "description": "Geany Default Color Theme",
+  "description": "Geany Default Syntax Color Theme",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "light"
   ],
   "repository": "https://github.com/atom/geany-syntax",
   "license": "MIT",
