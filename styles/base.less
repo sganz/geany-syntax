@@ -1,4 +1,6 @@
 @import "syntax-variables";
+@import "octicon-utf-codes";
+@import "octicon-mixins";
 
 // Animated Brace Matching
 @-webkit-keyframes bracketanimation {
@@ -64,6 +66,53 @@ atom-text-editor, :host {
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
+
+  /* mess with gutter icons and state */
+
+  .gutter:hover {
+      .line-number.foldable .icon-right {
+         .octicon(dash, 0.8em);
+        visibility: visible;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+  .gutter, .gutter:hover {
+     .line-number.folded .icon-right {
+       .octicon(plus, 0.8em);
+
+       visibility: visible;
+
+       &::before {
+         position: relative;
+         left: -.1em;
+       }
+     }
+   }
+
+   .line {
+      .fold-marker::after {
+       color:@bright-red;
+       /* display:none; */ /* Hide you don't like it */
+     }
+
+     .fold-marker {
+         &::after {
+             .icon(1.3em, inline);    /* make obvious, was  0.8em */
+         }
+     }
+   }
+
+   .gutter {
+           .line-number.folded.foldable {  /* set the folded line number color to red */
+         color:@red;
+     }
+   }
+
+   /* end of gutter marker hacks */
 
   .gutter {
     background-color: @syntax-gutter-background-color;
