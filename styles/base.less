@@ -106,12 +106,6 @@ atom-text-editor, :host {
      }
    }
 
-   .gutter {
-           .line-number.folded.foldable {  /* set the folded line number color to red */
-         color:@red;
-     }
-   }
-
    /* end of gutter marker hacks */
 
   .gutter {
@@ -130,7 +124,6 @@ atom-text-editor, :host {
     }
   }
 
-  .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
     color: @light-gray;
@@ -191,8 +184,8 @@ atom-text-editor::shadow .wrap-guide {
 }
 
 .storage {
-  color: @blue;// @purple;
-  font-weight: bold; // added
+  color: @blue;
+  font-weight: bold;
 }
 
 .constant {
@@ -207,7 +200,7 @@ atom-text-editor::shadow .wrap-guide {
   }
 
   &.numeric {
-    color: @green; // @orange;
+    color: @green;
   }
 
   &.other.color {
@@ -220,7 +213,7 @@ atom-text-editor::shadow .wrap-guide {
 }
 
 .variable {
-  color: @cyan; // @red;
+  color: @cyan;
 
   &.interpolation {
     color: darken(@red, 10%);
