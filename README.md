@@ -5,7 +5,8 @@ A simple light syntax theme to mimic the [Geany Editor](http://www.geany.org/). 
 
 I only looked at sample PHP, HTML, CSS files to check colors, but more could be done for other supported languages.
 # Revisions
-V1.0.1 Changed Folding indicator to be a `+` to expand `-` fold.
-V1.0.1 Fixed botched commit, now has gutter color highligher for folded lines.
+* V1.0.1 Changed Folding indicator to be a `+` to expand `-` fold.
+* V1.0.1 Fixed botched commit, now has gutter color highligher for folded lines.
+
 # Screenshot
 ![A screenshot of your theme](http://i.imgur.com/7KGns27.png)
