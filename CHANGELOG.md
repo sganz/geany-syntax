@@ -9,3 +9,6 @@
 
 ## 1.0.3 - Changed source for compatibility
 * Updated base.less based on deprecation warning made by Atom 1.13.0
+
+## 1.1.2 - Updated Readme Chagelog
+* Updated changelog and Readme
